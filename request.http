@@ -1,5 +1,41 @@
 
-@server = https://djsalinas-super-space-succotash-4499rj9x6xrfq7v9-8080.preview.app.github.dev/
+@server = https://djsalinas-super-space-succotash-4499rj9x6xrfq7v9-8080.preview.app.github.dev
 
 ###
-GET @server
+GET {{server}}
+
+###
+GET {{server}}/cursos
+
+###
+POST {{server}}/cursos
+Content-Type: application/json
+{
+    "nombre": "Algoritmos",
+    "creditos": 3
+}
+
+###
+GET {{server}}/cursos/1
+
+###
+PATCH {{server}}/cursos/1
+Content-Type: application/json
+{
+    "nombre" : "Algoritmoss"
+}
+
+###
+GET {{server}}/cursos/?size=2&page=2
+
+###
+GET {{server}}/cursos/?size=2&page=
+
+###
+GET {{server}}/cursos/?size=2&page=0&sort=creditos,desc
+
+###
+GET {{server}}/cursos/?size=2&page=1&sort=creditos,desc
+
+###
+GET {{server}}/cursos/?size=2&page=0&sort=creditos,desc
