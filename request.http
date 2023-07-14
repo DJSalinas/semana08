@@ -1,2 +1,5 @@
 
-https://djsalinas-super-space-succotash-4499rj9x6xrfq7v9-8080.preview.app.github.dev/
+@server = https://djsalinas-super-space-succotash-4499rj9x6xrfq7v9-8080.preview.app.github.dev/
+
+###
+GET @server
